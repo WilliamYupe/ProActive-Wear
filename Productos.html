@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProActive Wear - Productos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <h1>ProActive Wear</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="carrito.html">Carrito</a>
+    </nav>
+  </header>
+
+  <!-- Catálogo -->
+  <main>
+    <h2 class="subtitulo">Catálogo de Productos</h2>
+    <div class="catalogo">
+      <!-- Producto 1 -->
+      <div class="producto" onclick="abrirModal('modal1')">
+        <img src="Imagenes/Gemini_Generated_Image_7bijtp7bijtp7bij.png" alt="Playera Deportiva">
+        <h3>Playera Deportiva</h3>
+        <p>Q150.00</p>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="producto" onclick="abrirModal('modal2')">
+        <img src="Imagenes/Pantalon deportivo.png" alt="Pantalón Deportivo">
+        <h3>Pantalón Deportivo</h3>
+        <p>Q200.00</p>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="producto" onclick="abrirModal('modal3')">
+        <img src="Imagenes/Zapatos.png" alt="Zapatillas Running">
+        <h3>Zapatillas Running</h3>
+        <p>Q450.00</p>
+      </div>
+
+      <!-- Producto 4 -->
+      <div class="producto" onclick="abrirModal('modal4')">
+        <img src="Imagenes/Sudadera.png" alt="Sudadera Neon">
+        <h3>Sudadera Neon</h3>
+        <p>Q300.00</p>
+      </div>
+
+      <!-- Producto 5 -->
+      <div class="producto" onclick="abrirModal('modal5')">
+        <img src="Imagenes/Gorra.png" alt="Gorra Deportiva">
+        <h3>Gorra Deportiva</h3>
+        <p>Q100.00</p>
+      </div>
+
+      <!-- Producto 6 -->
+      <div class="producto" onclick="abrirModal('modal6')">
+        <img src="Imagenes/Mochila.png" alt="Mochila Training">
+        <h3>Mochila Training</h3>
+        <p>Q250.00</p>
+      </div>
+
+      <!-- Producto 7 -->
+      <div class="producto" onclick="abrirModal('modal7')">
+        <img src="Imagenes/Guantes.png" alt="Guantes Gym">
+        <h3>Guantes Gym</h3>
+        <p>Q120.00</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modales -->
+  <!-- Modal 1 -->
+  <div id="modal1" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar" onclick="cerrarModal('modal1')">&times;</span>
+      <img src="img/playera.png" alt="Playera Deportiva">
+      <h2>Playera Deportiva</h2>
+      <p>Playera ligera y transpirable para entrenamientos intensos.</p>
+      <p><b>Precio:</b> Q150.00</p>
+      <button onclick="agregarAlCarrito('Playera Deportiva', 150)">Añadir al carrito</button>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div id="modal2" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar" onclick="cerrarModal('modal2')">&times;</span>
+      <img src="img/pantalon.png" alt="Pantalón Deportivo">
+      <h2>Pantalón Deportivo</h2>
+      <p>Pantalón cómodo y flexible, ideal para running o gym.</p>
+      <p><b>Precio:</b> Q200.00</p>
+      <button onclick="agregarAlCarrito('Pantalón Deportivo', 200)">Añadir al carrito</button>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div id="modal3" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar" onclick="cerrarModal('modal3')">&times;</span>
+      <img src="img/zapatillas.png" alt="Zapatillas Running">
+      <h2>Zapatillas Running</h2>
+      <p>Zapatillas con amortiguación avanzada y diseño liviano.</p>
+      <p><b>Precio:</b> Q450.00</p>
+      <button onclick="agregarAlCarrito('Zapatillas Running', 450)">Añadir al carrito</button>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div id="modal4" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar" onclick="cerrarModal('modal4')">&times;</span>
+      <img src="img/sudadera.png" alt="Sudadera Neon">
+      <h2>Sudadera Neon</h2>
+      <p>Sudadera con detalles reflectivos, ideal para clima fresco.</p>
+      <p><b>Precio:</b> Q300.00</p>
+      <button onclick="agregarAlCarrito('Sudadera Neon', 300)">Añadir al carrito</button>
+    </div>
+  </div>
+
+  <!-- Modal 5 -->
+  <div id="modal5" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar" onclick="cerrarModal('modal5')">&times;</span>
+      <img src="img/gorra.png" alt="Gorra Deportiva">
+      <h2>Gorra Deportiva</h2>
+      <p>Gorra ajustable con ventilación para entrenamientos al aire libre.</p>
+      <p><b>Precio:</b> Q100.00</p>
+      <button onclick="agregarAlCarrito('Gorra Deportiva', 100)">Añadir al carrito</button>
+    </div>
+  </div>
+
+  <!-- Modal 6 -->
+  <div id="modal6" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar" onclick="cerrarModal('modal6')">&times;</span>
+      <img src="img/mochila.png" alt="Mochila Training">
+      <h2>Mochila Training</h2>
+      <p>Mochila espaciosa y resistente al agua, ideal para el gym.</p>
+      <p><b>Precio:</b> Q250.00</p>
+      <button onclick="agregarAlCarrito('Mochila Training', 250)">Añadir al carrito</button>
+    </div>
+  </div>
+
+  <!-- Modal 7 -->
+  <div id="modal7" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar" onclick="cerrarModal('modal7')">&times;</span>
+      <img src="img/guantes.png" alt="Guantes Gym">
+      <h2>Guantes Gym</h2>
+      <p>Guantes antideslizantes y acolchados para mayor seguridad.</p>
+      <p><b>Precio:</b> Q120.00</p>
+      <button onclick="agregarAlCarrito('Guantes Gym', 120)">Añadir al carrito</button>
+    </div>
+  </div>
+
+  <!-- Script de modales -->
+  <script>
+    function abrirModal(id) {
+      document.getElementById(id).style.display = "flex";
+    }
+    function cerrarModal(id) {
+      document.getElementById(id).style.display = "none";
+    }
+  </script>
+
+  <!-- Script para carrito -->
+  <script>
+    // Guardar producto en el carrito
+    function agregarAlCarrito(nombre, precio) {
+      let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+      carrito.push({ nombre, precio });
+      localStorage.setItem("carrito", JSON.stringify(carrito));
+      alert(nombre + " fue añadido al carrito 🛒");
+    }
+  </script>
+</body>
+</html>
+
+
